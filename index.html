@@ -1,43 +1,145 @@
 <!DOCTYPE html>
 <html lang="ja">
-
 <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="css/style.css">
-    <title>GISの実習用オープン教材サイト</title>
-  </head>
-  <body>
-    <div id="page">
-     <h1>GISの実習用オープン教材サイト</h1>
-     <p style="text-align:center;color:red;">(試験公開中)</p>
-     <div class="under_h1">
-       <p>科研基盤A「GISの標準コアカリキュラムと知識体系を踏まえた実習用オープン教材の開発」プロジェクトのサイトです。</p>
-     </div>
-     <div id="border">
-     <img src ="img/top.png" class="topimage">
-        <h2>【本サイトについて】</h2>
-       <p class="h2moji">&nbsp;本プロジェクトは、GIS(Geographic Information System)教育の充実のため、大学の実習授業や個人の自主学習等で利用できる実習用の教材を開発し、オープンな活用を推進することを目的としたものです。本プロジェクトで開発した教材は、本サイトとGitHubを通じて公開しています。本プロジェクトの詳細については、以下の「本研究について」の項目をご参照ください。<br>
-         &nbsp;<span>&nbsp;本教材は、© GIS Open Educational Resources WG, CC BY-SA 4.0</span>のライセンスで提供しています。詳しくは、GitHubページの利用規約をご確認ください。本教材では、利用者からの「Pull Request」を積極的に受け付けています。教材の修正案を提出いただける場合は、GitHubページの教材編集についてをご確認ください。<br>
-         <br>&nbsp;※利用上の注意点：本教材は、データダウンロードやGISソフトウェアの操作手法について解説しているものです。教材で示した解析手法やそれによって生じた値の正確性を証明するものではありません。教材によっては、不適切な表現や誤りを含んでいる可能性があることを、あらかじめご理解ください。
-      </p>
-  <h2>【実習用オープン教材】</h2>
-  <div id="box">　
-    <ul>
-    <li><a href="https://github.com/gis-oer/gis-oer/blob/master/GISオープン教材/README.md#gis実習用基礎教材について"><img src="img/top_1.png" class="image"></a></li>
-    <li><a href="https://github.com/gis-oer/gis-oer/tree/master/GISオープン教材/野外#実習動画"><img src="img/top_2.png" class="image"></a></li>
-    <li><a href="https://github.com/gis-oer/gis-oer/blob/master/GISオープン教材/インターネットの活用に関する教材/README.md#web-gis-実習用教材"><img src="img/top_3.png" class="image"></a></li>
-    <li><a href="https://github.com/gis-oer/gis-oer/blob/master/GISオープン教材/既存資料/README.md#既存資産との連携"><img src="img/top_4.png" class="image"></a></li>
-    <li><a href="#"><img src="img/top_5.png" class="image"></a></li>
-    <li><a href="https://github.com/gis-oer/gis-oer"><img src="img/top_6.png" class="image"></a>
-    <li><a href="https://gis-oer.github.io/gitbook/book_3.2/"><img src="img/top_7.png" class="image"></a></li>
-    <li><a href="#"><img src="img/top_8.png" class="image"></a></li>
-    <li><a href="https://github.com/gis-oer/gis-oer/blob/master/本プロジェクトについて.md#本プロジェクトについて"><img src="img/top_9.png" class="image"></a></li>
-  </div>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="">
+    <title>GISの実習用オープン教材ページ</title>
+    <link href="./css/bootstrap.min.css" rel="stylesheet" id="themesid">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+</head>
 
-   </div>
-   <div id="footer">
-    試験公開中（正式なリリースではありません）Copyright (C) 2016 CSIS All Rights Reserved.
-   </div>
-   </div>
-  </body>
+<body>
+
+    <header id="top" class="header">
+        <div class="text-vertical-center">
+            <h1>GISの実習用オープン教材</h1>
+            <h3>科研基盤A「GISの標準コアカリキュラムと知識体系を踏まえた実習用オープン教材の開発」</h3>
+            <br>
+            <a href="https://github.com/gis-oer/gis-oer/blob/master/README.md#gisの実習用オープン教材試験公開版" class="btn btn-dark btn-lg">詳細を知る</a>
+        </div>
+    </header>
+
+    <section id="materials" class="materials bg-primary">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-lg-10 col-lg-offset-1">
+                  <div class="container">
+                      <div class="row">
+                          <div class="col-lg-10 text-center">
+                              <h2></h2>
+                              <p class="lead text-left">　本プロジェクトでは、<strong>GIS(Geographic Information System)</strong>教育の充実のため、大学の実習授業や自主学習等で利用できる以下のような教材を開発し、<strong>GitHub</strong>で公開しています。</p>
+                          </div>
+                      </div>
+                  </div>
+                    <hr class="small">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-6">
+                            <div class="material-item">
+                              <img src="img/top_1.png">
+                                <h4>
+                                    <strong>GISソフトウェアの活用</strong>
+                                </h4>
+                                <p>授業や自主学習で利用できる実習用教材です。地理情報科学の知識体系に沿って、GISの操作法を解説しています。</p>
+                                <a href="https://github.com/gis-oer/gis-oer/blob/master/GISオープン教材/README.md#gis実習用基礎教材について" class="btn btn-light">詳細</a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="material-item">
+                              <img src="img/top_2.png">
+                                <h4>
+                                    <strong>GISと関連した野外調査</strong>
+                                </h4>
+                                <p>GISと関連した機材を用いた動画教材です。主に、野外調査で使う高価な機器の操作法を解説しています。</p>
+                                <a href="https://github.com/gis-oer/gis-oer/tree/master/GISオープン教材/野外#実習動画" class="btn btn-light">詳細</a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="material-item">
+                              <img src="img/top_3.png">
+                                <h4>
+                                    <strong>インターネットの活用</strong>
+                                </h4>
+                                <p>地理院地図などのWeb地図の操作法やLeafletやCesiumを利用したWeb地図の開発について解説している教材です。</p>
+                                <a href="https://github.com/gis-oer/gis-oer/blob/master/GISオープン教材/インターネットの活用に関する教材/README.md#web-gis-実習用教材" class="btn btn-light">詳細</a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="material-item">
+                              <img src="img/top_4.png">
+                                <h4>
+                                    <strong>既存資産との連携</strong>
+                                </h4>
+                                <p>過去のプロジェクトの成果である地理情報科学の知識体系（BoK）や講義用資料等を紹介しています。</p>
+                                <a href="https://github.com/gis-oer/gis-oer/blob/master/GISオープン教材/既存資料/README.md#既存資産との連携" class="btn btn-light">詳細</a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="material-item">
+                              <img src="img/top_5.png">
+                            </span>
+                                <h4>
+                                    <strong>情報系教材の開発</strong>
+                                </h4>
+                                <p>準備中～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～準備中</p>
+                                <a href="https://github.com/gis-oer/gis-oer/blob/master/GISオープン教材/" class="btn btn-light">詳細</a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="material-item">
+                              <img src="img/top_6.png">
+                                <h4>
+                                    <strong>利用規約</strong>
+                                </h4>
+                                <p>本教材は、CC BY-SA 4.0 のライセンスで提供しています。教材は、利用規約（詳細）に従ってご使用ください。</p>
+                                <a href="https://github.com/gis-oer/gis-oer/blob/master/利用規約.md#gisオープン教材試験公開版利用規約" class="btn btn-light">詳細</a>
+                            </div>
+                      </div>
+                      <div class="col-md-3 col-sm-6">
+                          <div class="material-item">
+                            <img src="img/top_7.png">
+                              <h4>
+                                  <strong>教材の改良・修正</strong>
+                              </h4>
+                              <p>教材の改良や技術面での運用手法に関するご提案等をいただく場合は、詳細をご確認のうえお願い致します。</p>
+                              <a href="https://github.com/gis-oer/gis-oer/blob/master/GISオープン教材/教材編集について.md#教材修正案pull-requestやその他投稿issueについての規則" class="btn btn-light">詳細</a>
+                          </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="material-item">
+                          <img src="img/top_8.png">
+                            <h4>
+                                <strong>デジタル教科書</strong>
+                            </h4>
+                            <p>本教材は、閲覧や操作性に優れたGitBook形式での提供を行っています。様々な用途に合わせて活用できます。</p>
+                            <a href="https://gis-oer.github.io/gitbook/book_3.2/" class="btn btn-light">詳細</a>
+                        </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1 text-center">
+                    <h4><strong>お問い合わせ</strong>
+                    </h4>
+                    <ul class="list-unstyled">
+                      <li>mail　:　gis-oer@csis.u-tokyo.ac.jp</li>
+                    </ul>
+                    <hr class="small">
+                    <p class="text-muted">&copy;2017 GIS-Open Educational Resources WG, <a href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA</a>. <br>試験公開中（正式なリリースではありません）</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
 </html>
